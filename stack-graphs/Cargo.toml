@@ -48,3 +48,6 @@ serde_json = { version = "1.0" }
 
 [package.metadata.docs.rs]
 all-features = true
+
+[lints.clippy]
+all = "allow"

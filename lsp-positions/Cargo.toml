@@ -28,3 +28,6 @@ tree-sitter = { version = "0.20", optional = true } # keep the same minor versio
 unicode-segmentation = { version = "1.8" }
 serde = { version = "1", features = ["derive"], optional = true }
 bincode = { version = "2.0.0-rc.3", optional = true }
+
+[lints.clippy]
+all = "allow"

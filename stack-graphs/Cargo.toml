@@ -54,3 +54,6 @@ all-features = true
 
 [lints.clippy]
 all = "allow"
+
+[lints.rustdoc]
+all = "allow"

@@ -188,6 +188,7 @@ impl<T> Arena<T> {
         self.items.truncate(1);
     }
 
+    // __NOMIC_FOUNDATION_FORK__ (added this function)
     pub(crate) fn truncate(&mut self, new_len: usize) {
         self.items.truncate(new_len);
     }

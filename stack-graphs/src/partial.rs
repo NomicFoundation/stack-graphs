@@ -2632,6 +2632,7 @@ impl PartialPaths {
         self.partial_path_edges.clear();
     }
 
+    // __NOMIC_FOUNDATION_FORK__ (added this function)
     pub fn save_checkpoint(&self) -> PartialPathsCheckpoint {
         PartialPathsCheckpoint {
             partial_symbol_stacks_len: self.partial_symbol_stacks.len(),
@@ -2640,6 +2641,7 @@ impl PartialPaths {
         }
     }
 
+    // __NOMIC_FOUNDATION_FORK__ (added this function)
     pub fn restore_checkpoint(&mut self, checkpoint: PartialPathsCheckpoint) {
         self.partial_symbol_stacks
             .truncate(checkpoint.partial_symbol_stacks_len);
@@ -2650,6 +2652,7 @@ impl PartialPaths {
     }
 }
 
+// __NOMIC_FOUNDATION_FORK__ (added this struct)
 pub struct PartialPathsCheckpoint {
     partial_symbol_stacks_len: usize,
     partial_scope_stacks_len: usize,
